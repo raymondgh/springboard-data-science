@@ -16,7 +16,7 @@ The historical data on business growth comes from the [County Business Patterns]
 
 To predict the growth or shrinkage of a US county's number of established firms, a regression algorithm will be used. A basic exploration will include an overview of the fastest and slowest growing and shrinking economies, a plot of net flow of taxpayers against net change in businesses, and breakdown by industry. It's possible that neighboring counties affect each other, and also that the specific destinations and origins of migrants correlate correlate differently with economic trends. Furthermore, it could be seen that business growth follows population growth subsequently in time (years) at different rates of reaction
 
-Deliverables
+### Deliverables
 
 1. Code (notebooks)
 2. Written report of findings

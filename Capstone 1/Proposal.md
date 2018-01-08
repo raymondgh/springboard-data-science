@@ -2,7 +2,7 @@
 
 ### Problem
 
-How much will a local United States economy grow or shrink this year? Since the great recession, awareness of economic trends has reached an all-time high. Corporations, governments, and families are all striving to make more economical investments. Given the complex range of factors contributing to a town or geography's economic growth and momentum, is it possible to predict the net growth or shrinkage of employer establishments in a county? Using historical US county migration and business establishment data, this study aims to build a model for predicting the change in number of employer establishments in a given US county.
+How much will a given local economy in the US grow or shrink this year? Since the great recession, awareness of economic trends has reached an all-time high. Corporations, governments, and families strive to make more economical investments. Given the complex range of factors contributing to a town or geography's economic growth and momentum, is it possible to predict the net growth or shrinkage of employer establishments in a county? Using historical US county-to-county population migration and historical business establishment data, this study aims to build a model for predicting the change in number of employer establishments in a given US county.
 
 ### Client
 

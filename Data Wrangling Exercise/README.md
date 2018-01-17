@@ -10,7 +10,7 @@ This exercise demonstrates programmatic wrangling of JSON data into a Pandas Dat
 
 ### Approach
 
-Using the json and pandas packages, the JSON data is reformatted into Pandas dataframes. Missing values are resolved by converting empty strings to NaN values, then filling the NaN values with their neighbors with the same project theme code. Summary methods are called on columns of interest to answer the business logic questions of which countries propose the most projects and which themes are most proposed.
+Using the json and pandas packages, the JSON data is reformatted into Pandas dataframes. Missing values are resolved by converting empty strings to NaN values, then filling the NaN values from neighbors that share the same project theme code. Summary methods are called on columns of interest to answer the business logic questions of which countries propose the most projects and which themes are most proposed.
 
 ### Reflection
 

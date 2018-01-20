@@ -15,19 +15,26 @@ _Note: this data is fake and was generated for the purpose of this case study. I
  - A special promotion or incentive recently ended
  - The service launched on another platform that isn't represented here
  - A large source of traffic dropped in popularity
+ - Dropoff was normal but new signups lagged
 
 
 ### Digging In
 
-Question
+Are certain customer segments responsible for the drop, or is it evenly spread?
+engagement by created_at, company_id, language
+
 Query
 Answer
 
-Question
+Does a certain activity type drop most?
+like_message, search_run, search_click_result_X, send_message, view_inbox
+
 Query
 Answer
 
-Question
+Was there a significant change in email strategy?
+sent_weekly_digest, email_open, email_clickthrough
+
 Query
 Answer
 

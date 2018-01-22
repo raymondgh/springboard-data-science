@@ -1,5 +1,6 @@
 # Case Study: Investigating a Drop in User Engagement
 _Note: this data is fake and was generated for the purpose of this case study. It is similar in structure to Yammer’s actual data, but for privacy and security reasons it is not real._
+
 SQL Code for my solution can be seen on [Mode](https://modeanalytics.com/editor/raymondgh/reports/034563872c01)
 
 ### The Problem
@@ -27,65 +28,38 @@ We are given four tables with a few fields each to analyze the situation. I star
 
 #### What does the distribution of users look like?
 
+Showing the top 50 largest companies [SQL](https://modeanalytics.com/raymondgh/reports/034563872c01/queries/69c109d3e756)
+
 ![Weekly Active Users](users-company.png)
 
 #### How many new signups have we had?
+
+By day [SQL](https://modeanalytics.com/raymondgh/reports/034563872c01/queries/8f841912a9a4)
 
 ![Weekly Active Users](signups.png)
 
 #### Are major changes to user engagement localized to one subgroup?
 
-By Company
+By Company [SQL](https://modeanalytics.com/raymondgh/reports/034563872c01/queries/51a8b3fe3869)
 
 ![Weekly Active Users](wau-company.png)
 
-By Device Type
+By Device Type [SQL](https://modeanalytics.com/raymondgh/reports/034563872c01/queries/c7080b92553c)
 
 ![Weekly Active Users](wau-device.png)
 
-By Language
+By Language [SQL](https://modeanalytics.com/raymondgh/reports/034563872c01/queries/195d636fb981)
 
 ![Weekly Active Users](wau-language.png)
 
-By Signup Date
-
-`SELECT DATE_TRUNC('week',z.occurred_at) AS "week",
-       COUNT(DISTINCT CASE WHEN z.user_age > 70 THEN z.user_id ELSE NULL END) AS "10+ weeks",
-       COUNT(DISTINCT CASE WHEN z.user_age < 70 AND z.user_age >= 63 THEN z.user_id ELSE NULL END) AS "9 weeks",
-       COUNT(DISTINCT CASE WHEN z.user_age < 63 AND z.user_age >= 56 THEN z.user_id ELSE NULL END) AS "8 weeks",
-       COUNT(DISTINCT CASE WHEN z.user_age < 56 AND z.user_age >= 49 THEN z.user_id ELSE NULL END) AS "7 weeks",
-       COUNT(DISTINCT CASE WHEN z.user_age < 49 AND z.user_age >= 42 THEN z.user_id ELSE NULL END) AS "6 weeks",
-       COUNT(DISTINCT CASE WHEN z.user_age < 42 AND z.user_age >= 35 THEN z.user_id ELSE NULL END) AS "5 weeks",
-       COUNT(DISTINCT CASE WHEN z.user_age < 35 AND z.user_age >= 28 THEN z.user_id ELSE NULL END) AS "4 weeks",
-       COUNT(DISTINCT CASE WHEN z.user_age < 28 AND z.user_age >= 21 THEN z.user_id ELSE NULL END) AS "3 weeks",
-       COUNT(DISTINCT CASE WHEN z.user_age < 21 AND z.user_age >= 14 THEN z.user_id ELSE NULL END) AS "2 weeks",
-       COUNT(DISTINCT CASE WHEN z.user_age < 14 AND z.user_age >= 7 THEN z.user_id ELSE NULL END) AS "1 week",
-       COUNT(DISTINCT CASE WHEN z.user_age < 7 THEN z.user_id ELSE NULL END) AS "Less than a week"
-  FROM (
-        SELECT e.occurred_at,
-               u.user_id,
-               DATE_TRUNC('week',u.activated_at) AS activation_week,
-               EXTRACT('day' FROM e.occurred_at - u.activated_at) AS age_at_event,
-               EXTRACT('day' FROM '2014-09-01'::TIMESTAMP - u.activated_at) AS user_age
-          FROM tutorial.yammer_users u
-          JOIN tutorial.yammer_events e
-            ON e.user_id = u.user_id
-           AND e.event_type = 'engagement'
-           AND e.event_name = 'login'
-           AND e.occurred_at >= '2014-05-01'
-           AND e.occurred_at < '2014-09-01'
-         WHERE u.activated_at IS NOT NULL
-       ) z
-
- GROUP BY "week"
- ORDER BY "week"
-LIMIT 100`
+By Signup Date [SQL](https://modeanalytics.com/raymondgh/reports/034563872c01/queries/16686f890caf)
 
 ![Weekly Active Users](wau-signup.png)
 
 
 #### Have there been any changes to our email strategy or success?
 
+All events on one chart [SQL](https://modeanalytics.com/raymondgh/reports/034563872c01/queries/764bf5bb39e2)
 ![Weekly Active Users](email.png)
 
 

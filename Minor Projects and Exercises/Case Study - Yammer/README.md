@@ -5,9 +5,11 @@ _Note: this data is fake and was generated for the purpose of this case study. I
 
 > You show up to work Tuesday morning, September 2, 2014. The head of the Product team walks over to your desk and asks you what you think about the latest activity on the user engagement dashboards. You fire them up, and something immediately jumps out:
 
-![Weekly Active Users](https://i.imgur.com/KUeD1Ed.png)
+![Weekly Active Users](wau.png)
 
 ### Hypotheses
+
+We want to know why user engagement has dropped. We'd know already if our servers went down, so a few deeper questions should be asked. Here are some ideas why we might have experienced the drop:
 
  - A client switched to a competitor along with all their users
  - A new feature was pushed that discourages some segment of users
@@ -20,27 +22,22 @@ _Note: this data is fake and was generated for the purpose of this case study. I
 
 ### Digging In
 
-Are certain customer segments responsible for the drop, or is it evenly spread?
-engagement by created_at, company_id, language
+We are given four tables with a few fields each to analyze the situation. I start be examining some summary information, and continue by drilling down on user engagement to find patterns.
 
-Query
-Answer
+#### What does the distribution of users look like?
 
-Does a certain activity type drop most?
-like_message, search_run, search_click_result_X, send_message, view_inbox
 
-Query
-Answer
+#### How many new signups have we had?
 
-Was there a significant change in email strategy?
-sent_weekly_digest, email_open, email_clickthrough
+#### Are major changes to user engagement localized to one subgroup?
 
-Query
-Answer
+By Company
+By Device Type
+By Language
+By Signup Date
 
-Question
-Query
-Answer
+#### Have there been any changes to our email strategy or success?
+
 
 ### Recommendation
 

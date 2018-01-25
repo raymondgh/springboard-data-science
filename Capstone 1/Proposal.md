@@ -10,7 +10,7 @@ Small business-focused solutions providers such as Intuit, Xero, Zenefits, Gusto
 
 ### Data
 
-The historical data on business growth comes from the [County Business Patterns](https://www.census.gov/programs-surveys/cbp.html) report from the United States Census. This includes the number of establishments by sector in all counties from 2005 through 2015 as well as payroll information and number of paid employees. The historical data on taxpayer migration comes from the [U.S. Population Migration Data](https://www.irs.gov/statistics/soi-tax-stats-migration-data) from the United States Internal Revenue Service which comes in two formats: an older style of a zip of XLS files for 1990 through 2011, and a newer style of CSVs from 2011 through 2016. The migration data includes total inflow and outflow of tax filers by year.
+The historical data on business growth comes from the [County Business Patterns](https://www.census.gov/data/tables/2015/econ/cbp/us-states-counties-pr-island-areas.html) report from the United States Census. This includes the number of establishments by sector in all counties from 2005 through 2015 as well as payroll information and number of paid employees. The historical data on taxpayer migration comes from the [U.S. Population Migration Data](https://www.irs.gov/statistics/soi-tax-stats-migration-data) from the United States Internal Revenue Service which comes in two formats: an older style of a zip of XLS files for 1990 through 2011, and a newer style of CSVs from 2011 through 2016. The migration data includes total inflow and outflow of tax filers by year.
 
 ### Approach
 

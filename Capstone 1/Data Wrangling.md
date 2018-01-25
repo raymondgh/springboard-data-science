@@ -7,7 +7,7 @@ To answer the study's core questions about the relationship between US migration
 
 ### Importing Raw Data
 
-[County Business Patterns data](https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml) was acquired by downloading 11 CSV files from the census website, selecting all optional columns to be included. Each was read into a dataframe and columns renamed to remove punctuation. 
+[County Business Patterns data](https://www.census.gov/data/tables/2015/econ/cbp/us-states-counties-pr-island-areas.html) was acquired by downloading 11 CSV files from the census website, selecting all optional columns to be included. Each was read into a dataframe and columns renamed to remove punctuation. 
 
 [U.S. Population Migration Data](https://www.irs.gov/statistics/soi-tax-stats-migration-data) was aquired by downloading 4 CSV files and 7 ZIP files including 102 XLS files each. These files were further segmented into three different data formats for parsing, and four different filename formats for gathering for batch processing. Unlike the County Business Patterns data, the only year-identifying information in the migration data was found in the filenames. To add this information to the dataframes, dictionaries of years and lists of files were created and iterated over as tuples using the .items() method.
 

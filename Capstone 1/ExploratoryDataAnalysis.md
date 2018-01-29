@@ -153,4 +153,6 @@ The smallest and largest counties can experience nominal growth that registers a
 
 ## Reflection
 
-Whoa that was neat. how neat was that?
+Producing more than 25 visualizations of the data with many more in mind showed me that the proposal for this project is broader than necessary for practicing data science workflows and exercises. Business data of employment and establishments across 20 industries, plus inflow and outflow data for number of exemptions, returns, and adjusted gross income means that a flat file of data on each US County for one year would have 3,142 rows with more than 18,912 columns each. A simpler approach may investigate population migration alone in a graph format, or simplify all data to totals and nets as many of my visualizations do. 
+
+An alternative solution to the complexity is to allow interactive exploration of the data by users. A github readme file is not the place for that, but using Leaflet.js could make interactivity a perfectly reasonable to show and explore this data further.

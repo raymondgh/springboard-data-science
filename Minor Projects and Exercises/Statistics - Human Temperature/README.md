@@ -1,5 +1,7 @@
 # Statistics: Body Temperature
 
+[Python Notebook](sliderule_dsi_inferential_statistics_exercise_1.ipynb)
+
 ### Assignment
 
 This exercise demonstrates statistical analysis of a sample of 130 human temperature readings to explore and explain normality and distribution of temperature values as relating to the generally accepted average of 98.6 degrees.

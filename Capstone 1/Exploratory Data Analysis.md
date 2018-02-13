@@ -1,5 +1,5 @@
 # Exploratory Data Analysis
-[Notebook](https://github.com/raymondgh/springboard-data-science/blob/master/Capstone%201/ExploratoryDataAnalysis.ipynb)
+[Notebook](Exploratory%20Data%20Analysis.ipynb)
 
 ## Objective
 

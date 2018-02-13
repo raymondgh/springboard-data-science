@@ -1,5 +1,5 @@
 # Inferential Statistics
-[Notebook](https://github.com/raymondgh/springboard-data-science/blob/master/Capstone%201/StatisticalAnalysis.ipynb)
+[Notebook](https://github.com/raymondgh/springboard-data-science/blob/master/Capstone%201/Inferential%20Statistics.ipynb)
 
 ## Objective
 

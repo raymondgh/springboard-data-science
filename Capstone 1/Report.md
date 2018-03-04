@@ -5,8 +5,8 @@ March 4, 2018
 
 ## Outline
 
-- Introduction
-- Data Acquisition and Cleaning
+- [Introduction](Report.md#introduction)
+- [Data Acquisition and Cleaning](#introduction)
 - Data Exploration
 - Modeling
 - Using Model and Recommendations

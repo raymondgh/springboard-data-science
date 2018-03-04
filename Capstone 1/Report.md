@@ -16,7 +16,7 @@ March 4, 2018
 
 ## Introduction
 
-[Original Proposal](Proposal.md)
+[Capstone Proposal](Proposal.md)
 
 How much will a given local economy in the US grow or shrink this year? Since the great recession, awareness of economic trends has reached an all-time high. Corporations, governments, and families strive to make more economical investments. Given the complex range of factors contributing to a town or geography's economic growth and momentum, is it possible to predict the net growth or shrinkage of employer establishments in a county? Using historical US county-to-county population migration and historical business establishment data, this study aims to build a model for predicting the change in number of employer establishments in a given US county.
 
@@ -24,6 +24,8 @@ The historical data on business growth comes from the [County Business Patterns]
 
 ## Data Acquisition and Cleaning
 
+[Notebook](Data%20Wrangling.ipynb)
+ 
 To answer the study's core questions about the relationship between US migration and business growth, observations of counties and their attributes of business status, immigration, and emigration are needed for each year between 2005 and 2015. 
 
 [County Business Patterns data](https://www.census.gov/data/tables/2015/econ/cbp/us-states-counties-pr-island-areas.html) was acquired by downloading 11 CSV files from the census website, selecting all optional columns to be included. Each was read into a dataframe and columns renamed to remove punctuation. 

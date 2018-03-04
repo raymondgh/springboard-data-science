@@ -5,10 +5,10 @@ March 4, 2018
 
 ## Outline
 
-- [Introduction](Report.md#introduction)
-- [Data Acquisition and Cleaning](#introduction)
-- Data Exploration
-- Modeling
+- [Introduction](#introduction)
+- [Data Acquisition and Cleaning](#data-acquisition-and-cleaning)
+- [Data Exploration](#data-exploration)
+- [Modeling](#modeling)
 - Using Model and Recommendations
 - Assumptions and Limitations
 - Other Data and Future Work
@@ -158,4 +158,6 @@ The smallest and largest counties can experience nominal growth that registers a
 ![Scatter Plot of Recession (2007-2011) Business vs Population Growth (middle 80th percentile)](images/eda26.png)
 
 ![Scatter Plot of Recovery (2011-2015) Business vs Population Growth (middle 80th percentile)](images/eda27.png)
+
+## Modeling
 

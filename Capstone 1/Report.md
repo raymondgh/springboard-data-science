@@ -1,4 +1,4 @@
-# Springboard Capstone Report: Predicting County Business Growth
+# Predicting County Business Growth
 Ray Harris
 
 March 4, 2018

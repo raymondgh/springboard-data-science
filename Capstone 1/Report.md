@@ -10,6 +10,7 @@ March 4, 2018
 - [Data Exploration](#data-exploration)
 - [Descriptive Statistics](#descriptive-statistics)
 - [Modeling](#modeling)
+- [Sample Preparation](#sample-preparation)
 - Using Model and Recommendations
 - Assumptions and Limitations
 - Other Data and Future Work
@@ -171,6 +172,8 @@ Unexpectedly, the correlation across all 10 years of change was found only to be
 Looking deeper at the relationship between county immigration and emigration, it can be seen that the bigger the county, the more the churn. While that's true, a handful of outliers were identified, representing counties with the greatest "unexpected" population growth and shrinkage. Interestingly, Los Angeles County, previously seen as the US's largest county by headcount, is also the most unexpectedly deserted county for a number of years. The areas of New Orleans and Chicago also suffered major losses, Chicago's Cook County being the US's second largest county by headcount. On the positive side, the areas of Riverside CA, Phoenix AZ (of US's fourth largest county, Maricopa, AZ), and Austin, TX (Of Travis County, TX) experienced the greatest unexpected growth.
 
 ## Sample Preparation
+
+[Notebook](Sample%20Preparation.ipynb)
 
 To prepare the canonical data for modeling, interim data is concatenated and simplified into a single CSV file.
 

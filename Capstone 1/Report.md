@@ -170,7 +170,13 @@ Unexpectedly, the correlation across all 10 years of change was found only to be
 
 Looking deeper at the relationship between county immigration and emigration, it can be seen that the bigger the county, the more the churn. While that's true, a handful of outliers were identified, representing counties with the greatest "unexpected" population growth and shrinkage. Interestingly, Los Angeles County, previously seen as the US's largest county by headcount, is also the most unexpectedly deserted county for a number of years. The areas of New Orleans and Chicago also suffered major losses, Chicago's Cook County being the US's second largest county by headcount. On the positive side, the areas of Riverside CA, Phoenix AZ (of US's fourth largest county, Maricopa, AZ), and Austin, TX (Of Travis County, TX) experienced the greatest unexpected growth.
 
+## Sample Preparation
 
+To prepare the canonical data for modeling, interim data is concatenated and simplified into a single CSV file.
+
+A target variable is created as the boolean comparison of a year's business establishment count to the previous year's count. The inflow and outflow data from the IRS is combined with the business data frame with the growth target variable for a completed data set. In the migration data, per-county immigration is simplified from 3,142 counties to in-state and out-of-state to counter the irrelevance of in-state data to each of the other 49 states. In other words, since each state is likely to be most affected by in-state migration, and data from another state is likely only to severely affect its own state, migration data is normalized to in and out of state. Without this modification, more populous states and states with greater volumes of migration would outweigh counties in smaller, less populous states across the entire nation, despite those smaller counties informative value to their immediate neighbors.
+
+The csv file is saved with ten years of samples for 3,142 counties with 1 target variable and 17 explanatory variables.
 
 ## Modeling
 

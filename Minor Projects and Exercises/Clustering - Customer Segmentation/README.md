@@ -1,4 +1,4 @@
-# Linear Regression: Boston Housing
+# Clustering: Customer Segmenetation
 
 [Python Notebook](Mini_Project_Clustering.ipynb)
 

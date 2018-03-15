@@ -186,11 +186,32 @@ The csv file is saved with ten years of samples for 3,142 counties with 1 target
 [Notebook](Modeling.ipynb)
 
 
-Samples are imported and non-variable labels of geo_id and year are removed. The data is split 75/25 into a train and test set. The training set is fed to multiple pipelines executed by a exhaustive grid-search cross validation function to optimize the selected parameters. Sci-kit Learn's Logistic Regression function is first used with four solvers: liblinear, newton-cg, sag, and lbfgs. Despite a range of hyperparameters to try, the training confusion matrix reveals that the model is not able to effectively learn the data. There are too many false negatives. 
+Samples are imported and non-variable labels of geo_id and year are removed. The data is split 75/25 into a train and test set. The training set is fed to multiple pipelines executed by a exhaustive grid-search cross validation function to optimize the selected parameters. Sci-kit Learn's Logistic Regression function is first used with four solvers: liblinear, newton-cg, sag, and lbfgs. Dimensionality reduction is performed with Principal Component Analysis after all features are normalized with the StandardScaler preprocessing method. Despite a range of hyperparameters to try, the training confusion matrix reveals that the model is not able to effectively learn the data. There are too many false negatives. 
+
+### Classification Reports
+
+Logistic Regression
+
+![Best Tuned Logistic Regression](images/allyearsroc.png)
+
+K-Nearest Neighbors
+
+![Best Tuned K-Nearest Neighbors](images/nearestneighbors.png)
+
+Gaussian Naive Bayes
+
+![Best Tuned Naive Bayes](images/naivebayes.png)
+
+Random Forest
+
+![Best Tuned Random Forest](images/randomforest.png)
+
+Support Vector Machine
+
+![Best Tuned Support Vector Machine](images/svm.png)
 
 Before balancing the classes by weight, the recall for True outcomes is reported in the area of 0.15, and increased to 0.33 thereafter. In other words, the model is predicting a lack of retail growth in most areas. 
 
-![Best Tuned Logistic Regression](images/allyearsroc.png)
 
 Examining the false negative and false positives reveals a significant distortion of predictability in the recession years on 2007-2011. Geographically, misses were widespread, though seem concentrated in the continental Central Timezone, the coastal northeast, across California.
 
@@ -208,12 +229,34 @@ Incorrect Predictions by County
 
 In further analysis, years of data are excluded for a subsample analysis, though results do not improve significantly. The highest accuracy reached is 67%
 
+Logistic Regression
+
+![Best Tuned Logistic Regression with '08 and '09 excluded](images/logisticregression2.png)
+
 ![Best Tuned Logistic Regression with '08 and '09 excluded](images/not0809roc.png)
 
-## Modeling
+Random Forest
 
-## Assumptions and Limitations
+![Best Tuned Random Forest with '08 and '09 excluded](images/randomforest2.png)
+
+## Assumptions
+
+Both the county business data and migration data are chronologically supplied, but do not represent time series data; they are merely snapshots in time. While this project considers each sample independently, it would be reasonable to expect that multi-year trends could affect businesses differently in different decades and geographies. A single year of migration and business data is considered for this study. 
+
+The method of simplification from county-by-county migration to in-state and out-of-state migration is clever, but questionable. Smaller states in the northeast would be expected to be more greatly influenced from out of state migration, while larger states with even more counties could skew the feature weighting toward in-state migrations.
+
+The model is predicting a binary growth or shrinkage boolean and disregarding the magnitude of the vector in its evaluation. Since the practical growth of retail establishments is more continuous than yes/no, the model could be facing a stricter evaluation than necessary, for example, if the actual change is +10% and the predicted change is -0.1%, the classification will be wrong but the value estimate could be within reasonable range of actual growth.
+
+Data normalization was performed vertically on the raw values of population and businesses, but not horizontally across counties. Parishes and Counties are assumed by this model to behave similarly and have similar properties, but the variation in counties were not considered. Geographically larger counties would be expected to have less inter-county migration. Counties of high populations may be affected less or more by short-term population churn. County location relative to metropolis areas or "[Metropolitan  Statistical  Areas](https://www.census.gov/geo/reference/garm.html)" as the US Census defines them.
+
+Furthermore, the goal of predicting overall business growth using retail establishments as a measure may be affected by external economic factors such as the consolidation of distribution of mass-marketed products. Stores like Wal-Mart and Amazon are forcing small businesses out of the retail industry without any county-level counterbalances.
 
 ## Other Data and Future Work
 
+Economic factors of production traditionally include land, labor, capital and entrepreneurship. This study accounts for labor alone. To further expand this study, the other basic factors could be considered along with lagging economic indicators like real estate market trends and county tax revenues.
+
+These features could be further engineered and weighed as predictive factors, giving a more reasonable method of predicting economic growth.
+
 ## Conclusion
+
+In this project, two government supplied data sources were used to predict county economic growth as measured in number of retail establishments.

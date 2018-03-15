@@ -6,7 +6,7 @@ Who should I follow on Hackernews? Unlike popular social media platforms like Fa
 
 ### Client
 
-Y Combinator may have intentionally ignored the trend of personalized activity feeds, but the creation of a minimum-viable-mvp could provide actionable insights for the organization, or at least additional confidence in the existing path. Recruiters and advertisers would rejoice at the increased targeting made possible by this reorganization of data, and special-interest groups would benefit from having relevant content promoted to relevant people.
+Y Combinator may have intentionally ignored the trend of personalized activity feeds, but the creation of a minimum-viable-product could provide actionable insights for the organization, or at least additional confidence in the existing path. Recruiters and advertisers would rejoice at the increased targeting made possible by this reorganization of data, and special-interest groups would benefit from having relevant content promoted to relevant people.
 
 ### Data
 
@@ -14,7 +14,7 @@ The Hacker News corpus will be the only data source for this exploration. A Kagg
 
 ### Approach
 
-To create a content recommendation engine, a multi-step process is necessary. First, popular submissions and comments will be clustered into topics. Second, influential users will be identified for those topics. Thirdly, a recommender will be created that suggests influential users to a given user of interest.
+To create a content recommendation engine, a multi-step process is necessary. First, popular submissions and comments will be clustered into topics. Second, influential users will be identified for those topics. Thirdly, a recommender will be created that suggests influential users and some of their content to a given user of interest. 
 
 ### Deliverables
 

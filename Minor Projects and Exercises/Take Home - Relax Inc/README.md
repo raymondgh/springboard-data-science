@@ -1,6 +1,6 @@
 # Take Home Challenge - Relax Inc.
 
-[Python Notebook](Relax%Inc.ipynb)
+[Python Notebook](Relax%20Inc.ipynb)
 
 ### Assignment
 

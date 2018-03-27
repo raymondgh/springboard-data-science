@@ -8,11 +8,11 @@ Proposal
 
  - [Read Me](Proposal.md)
 
-Data Wrangling
+Data Acquisition
 
- - [Read Me](Data%20Wrangling.md)
+ - [Read Me](Data%20Acquisition.md)
 
- - [Python Notebook](Data%20Wrangling.ipynb)
+ - [Python Notebook](Data%20Acquisition.ipynb)
 
 Exploratory Data Analysis
 

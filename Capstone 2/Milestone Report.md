@@ -33,9 +33,9 @@ In summary, site content production ratios between users, stories, and comments 
 Proposal
  - [Read Me](Proposal.md)
 
-Data Wrangling
- - [Read Me](Data%20Wrangling.md)
- - [Python Notebook](Data%20Wrangling.ipynb)
+Data Acquisition
+ - [Read Me](Data%20Acquisition.md)
+ - [Python Notebook](Data%2Acquisition.ipynb)
 
 Exploratory Data Analysis
  - [Read Me](Exploratory%20Data%20Analysis.md)

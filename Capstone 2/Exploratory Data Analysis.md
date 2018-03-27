@@ -31,6 +31,10 @@
 
 #### Topic Trends
 
+![Gartner Hype Cycle](images/gartner.jpg)
+
+[Gartner](https://www.gartner.com/smarterwithgartner/top-trends-in-the-gartner-hype-cycle-for-emerging-technologies-2017/)
+
 ![Hype Words not Scaled](images/hypewords1.png)
 
 ![Hype Indepdendent](images/hypewords.png)

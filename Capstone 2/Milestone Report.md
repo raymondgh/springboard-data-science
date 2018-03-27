@@ -18,19 +18,15 @@ A natural parallel to the news prong of the technical community could be the "co
 
 ## Initial Findings
 
-- shift from community to news
-- care about people
-- topics come and go
-
 Looking at key metrics of user activity, trends can be seen that show a general shift from a communal portal for discussion toward a news portal to discuss technology news with the lens of startup culture. This is supported by significant shrinkage in number of stories submitted per active user and an corresponding increase in number of comments per story. Growth in users and stories has been nearly linear, while growth in comments has been exponential. These observations suggest that discussions are growing deeper and more thorough over time, though not growing as numerous. It also indicates an increased bar of difficulty for a submitted story to reach the ranks of the front page.
 
 Topics of the top scoring stories from each year reveal another trend of continued focus on people and organizations over technical details. This is somewhat surprising as HN is known for its rich discussion on technical matters and even technical "one-upmanship". Most of the top threads feature stories about more generally relatable events, which makes sense, since the nuanced topics should only appeal to certain niches.
 
 Thirdly, key words and phrases are analyzed in popularity over time. The number of mentions a keyword has can serve as an adequate measure of its topic's popularity. Expectedly, hot topics and trends come and go with some beyond their heyday and some still rising. For example, "Web 2.0" and "Prediction Market" were on their way out of the lexicon when HN was founded, while "nfc" and "crowdsourcing" have risen and fallen in popularity, and "deep learning" and "blockchain" are still on their way up.
 
---- insert line about inferential statistics findings ---
+Statistically examining the data, it's seen that there is a very strong relationship between number of comments and upvotes each story receives. It's also shown that this relationship varies by type of post; users are relatively more likely to contribute comments to the "Ask HN" threads of inquiry, and relatively more likely to contribute only upvotes to "Show HN" threads.
 
-In summary, content ratios have been found to have shifted over time, but not in a way that detracts from this project's ability focus on exploring influential commenters. The project is further supported by early findings corroborating the ability to identify topics by descriptiveness and keyword usage.
+In summary, site content production ratios between users, stories, and comments have been found to have shifted over time, but not in a way that detracts from this project's ability focus on exploring influential commenters. The project is further supported by early findings corroborating the ability to identify topics by descriptiveness and keyword usage.
 
 ## Code
 

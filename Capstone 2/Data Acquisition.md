@@ -1,4 +1,4 @@
-# Data Wrangling
+# Data Acquisition
 [Notebook](Data%20Wrangling.ipynb)
 
 ### Objective

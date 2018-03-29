@@ -1,31 +1,15 @@
-# Intro
-This is where you can see information about my second Data Science capstone project.
+# Springboard Capstone: Recommending Hacker News Content
 
-### warning: links not all set up yet
+![Wordcloud](images/wordcloud.png)
 
+Who should I follow on Hackernews? Unlike popular social media platforms like Facebook and Instagram, Hackernews has no version of a "news feed," or any content customization for that matter. As the hackernews audience continues to grow, front-page content becomes increasingly general and shallow, decreasing the depth of interaction, and ultimately the value created both for users and for the Y Combinator professional network.
 
-Proposal
+Checkpoints
 
- - [Read Me](Proposal.md)
-
-Data Acquisition
-
- - [Read Me](Data%20Acquisition.md)
-
- - [Python Notebook](Data%20Acquisition.ipynb)
-
-Exploratory Data Analysis
-
- - [Read Me](Exploratory%20Data%20Analysis.md)
-
- - [Python Notebook](Exploratory%20Data%20Analysis.ipynb)
-
-Inferential Statistics
-
- - [Read Me](Inferential%20Statistics.md)
-
- - [Python Notebook](Inferential%20Statistics.ipynb)
-
-Milestone Report
-
- - [Read Me](Milestone%20Report.md)
+ - [Project Proposal](Proposal.md)
+ - [Data Acquisition](Data%20Acquisition.md)
+ - [Exploratory Data Analysis](Exploratory%20Data%20Analysis.md)
+ - [Inferential Statistics](Inferential%20Statistics.md)
+ - [Milestone Report](Milestone%20Report.md)
+ - [Modeling](Modeling.md)
+ - [Report](Repord.md)

@@ -9,10 +9,17 @@ To dive a bit deeper into the the hackernews data, the relationship between a st
 
 Distributions of story properties of descendants and scores are shown. Descendants is a measure of how many comments were added by users in association with the story, including comments referencing other comments. Score is a measure of how many upvotes a story received. From two simple distribution plots, it can be seen that the vast majority of stories submitted to hackernews are ignored by most users. There is an exponential distribution whereby most stories have no comments and few have very many, likewise with points.
 
+![Story Scores](images/story_score.png)
+
+![Story Comments](images/story_comments.png)
+
 With 2.8 million entries, rendering a scatterplot is not feasible. Instead, a hexbin is plotted that simplifies the data by binning it into 80 bins along the x axis with a corresponding number of bins (based on the data) to maintain hexagon regularity. 
+
+![Scores vs Comments](images/story_score_vs_comments.png)
 
 Strong relationships are seen across all three types of content. The Pearson coefficient measures a positive correlation of 0.82, 0.81, and 0.80 for links, show, and ask type stories. 
 
+![Story Scores vs Comments By Type](images/story_score_vs_comments_by_type.png)
 
 ## Conclusion
 

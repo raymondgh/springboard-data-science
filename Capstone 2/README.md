@@ -1,4 +1,4 @@
-# Springboard Capstone: Recommending Hacker News Content
+# Capstone: Recommending Hacker News Content
 
 ![Wordcloud](images/wordcloud.png)
 

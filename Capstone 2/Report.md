@@ -203,6 +203,8 @@ To better represent and serve users with relevant news, commentary, and contribu
 
 ## Conclusion
 
+It is shown that text-analysis based content categorization and recommendation is possible, though computationally expensive.
+
 In this project, Hacker News data is pulled from online storage and analyzed to recommend content with a more targeted formula than the live Hacker News website employs. Data is acquired via Google Cloud Storage, and minimally adjusted for analysis.
 
 Trends across time and topic are explored using term frequency-inverse document frequency to extract meaningful subjects from thread documents. Growth of the userbase and their activity is explored visually and numerically over the 12 years of site operation. 

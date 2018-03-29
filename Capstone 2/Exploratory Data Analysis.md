@@ -9,7 +9,7 @@ This exploration introduces the dataset and dives into the concept of topic iden
 
 ## Importing the Data
 
-Interim data is loaded after the processing done with the original BigQuery Data. At this point, the data has been pulled from the HackerNews API, uploaded to Google BigQuery, exported to Google Cloud Storage, split into 17 CSV files and downloaded locally, and processed with few changes needed along the way. For more, check out this project's wrangling step.
+Interim data is loaded after the processing done with the original BigQuery Data. At this point, the data has been pulled from the HackerNews API, uploaded to Google BigQuery, exported to Google Cloud Storage, split into 17 CSV files and downloaded locally, and processed with few changes needed along the way. For more, check out this project's data acquisition step.
 
 ## Analyzing it
 

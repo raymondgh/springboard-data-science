@@ -21,6 +21,12 @@ Strong relationships are seen across all three types of content. The Pearson coe
 
 ![Story Scores vs Comments By Type](images/story_score_vs_comments_by_type.png)
 
+It's important to note that the three plots in the figure above are scaled to the same horizontal and vertical axis ranges. However, the hexagons are scaled to encompass the data. Therefore, since the "Linked" story type has greater variety in story score as well as amount of comments, the hexagons are both wider and taller. 
+
+It appears that the relationships are all strong positive correlations, but that there are significant differences in variance. The following plot shows the lines of best fit for each type of story.
+
+![Story Score Linear Fit](images/score_comment_relationship.png)
+
 ## Conclusion
 
 The sheer quantity of content posted to hackernews that goes without votes or replies is astounding. When browsing the main website, users will only encounter the top ranked posts under normal circumstances. It has been seen as an achievement to have self-produced content reach the front of hackernews, and the data strongly supports that. On the other hand, much of it could be spam, though it seems unlikely, as spam is not a major issue on the site.

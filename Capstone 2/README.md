@@ -12,4 +12,4 @@ Checkpoints
  - [Inferential Statistics](Inferential%20Statistics.md)
  - [Milestone Report](Milestone%20Report.md)
  - [Modeling](Modeling.md)
- - [Report](Repord.md)
+ - [Report](Report.md)

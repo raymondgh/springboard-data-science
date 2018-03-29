@@ -20,6 +20,8 @@ The TF-IDF Vectorizer is extremely successful. The first three documents clearly
 
 ![Topic Clusters](images/documentGraph.png)
 
+Using the NetworkX library, a graph is drawn to show the corpus relationships. Each node is a document, and each edge is a matching descriptive word between those documents. Metadata is added to the graph edges describing the strength of the relationship calculated as the product of the descriptiveness of the word for each document in the pair. This means that each node could have multiple links to another node, one for each keyword that matches.
+
 For this project, we will not classify the entire hackernews corpus, but merely present the capability to do so. To scale up to processing 6GB of text data, batched work on dedicated data processing servers would be employed.
 
 In the next step, provocative users are identified for each topic. A user is considered provocative if their comment generates a comment from another user (or themselves). To rank users by this metric, we look at the average number of comments generated per user comment for users with at least 3 comments in the topic. This formula is primitive, but it balances against spammers and one-hit-wonder anomolies. Each comment does have a score, but these scores are not exposed through the web or programmatic interfaces of hackernews; they are only accessible to the owners of the comments.

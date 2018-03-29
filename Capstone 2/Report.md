@@ -189,23 +189,26 @@ This project proudly takes a step toward investigating a solution whereby commen
 
 ## Assumptions and Limitations
 
-- provocative as measure of good
-- data size and simulation corpus
+Despite success tagging topics with descriptive words, there are inherent limitations to the design decisions of the project and technical execution. First and foremost, the content ranking algorithm is based entirely on "provocation" as measured by the number of comments directly responding to the item. In many cases, this can be a post that is emotionally provoking rather than thought provoking -- in other words, trolling and/or spam. Moreover, The fomula does not count grandchildren, and thus a comment by a user that begins a deep discussion but backs out of it will not be rewarded. Most importantly, as shown in the comment-to-upvote relationship plots above, users have a much greater propensity to give an upvote to a comment than to add their own comment; an ideal system would be able to consider these upvotes.
 
+Technical limitations affecting this project are primarily based on the nature of a news discussion board. In order to model a user's interaction with the community, a holistic view of their participation is necessary. In this case, that means analyzing a 10+ year history of over 2.88 million threads. Selecting a subset within a window of time would not capture a user's behavior adequately, so in this project, a subet of threads is selected by topic via manual search.
+
+In the deployment of a content recommendation system, it's important to note the costs of topic selection. If the user is only to provide their own account details and have interests suggested based on past activity, onboarding time would be longer than if the user were to manually select friends/influencers/topics that could be pre-existing or pre-computed.
 
 ## Other Data and Future Work
 
-- connect with github profiles
-- attempt larger scale 
-- tagging system vs topic system
+As this project merely demonstrates foundational feasibility of a hackernews newsfeed, there is much to do it see it to completion. Topic keywords have been identified in the form of what would be known as "tags" but these documents could be further classified by constructing a graph of document nodes with edges defined by shared tags. Clusters could then be defined programmatically based on the strength and number of these edges. 
 
+To better represent and serve users with relevant news, commentary, and contributions, integration with more data sources could prove valuable. Some examples include Keybase identification verification, Github profile linking, and LinkedIn networking integrations. With these sources, content could be enriched to not only segment HN traffic into special interests, but also to simultaneously increase the practicality of personal interactions by making communication easier for recruiters and contributors.
 
 ## Conclusion
 
-- restate problem
-- summarize data acq
-- summarize findings from data expl
-- summarize infer data findings
-- summarize modeling
-- discuss limitations
-- discuss next steps
+In this project, Hacker News data is pulled from online storage and analyzed to recommend content with a more targeted formula than the live Hacker News website employs. Data is acquired via Google Cloud Storage, and minimally adjusted for analysis.
+
+Trends across time and topic are explored using term frequency-inverse document frequency to extract meaningful subjects from thread documents. Growth of the userbase and their activity is explored visually and numerically over the 12 years of site operation. 
+
+Documents are created from the texts of comments and story submissions by users on the site. Within topics, threads are combined to aggregate user activity. A formula is created to surface the most "provocative" users within each topic, and the recent threads featuring these users' comments are provided as recommendations for subject exploration. In this project, Blockchain-related threads from 2017 and 2018 are used to recommend content involving five provocative users.
+
+While the project explores a viable path toward a content recommendation / personalization system, the limitations of scope and access to data compromise the feasibility of a complete production of such a system. 
+
+Most important to the successful implementation of project based on these findings would be the tuning of the content ranking fomula. For this, user research and satisfaction / engagement testing would be recommended. 

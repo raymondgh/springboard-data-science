@@ -3,7 +3,7 @@ Ray Harris
 
 March 4, 2018
 
-[PDF](Report.pdf)
+[PDF](Report - Recommending Hacker News Content.pdf)
 
 [Slides](https://docs.google.com/presentation/d/1OJ2JILEILx726Q8af-5XOXPtt84IBBUcNhumGbuxJYs)
 

@@ -1,4 +1,6 @@
-# Hello! Look forward to some sciencey data stuff here soon!
+# Hello! I'm working on improving this readme. Check out my data science work!
+
+Github doesn't like when i rename root folders, so it's taking some time to fix this. for now, browse a little more manually than i'd like
 
 
 [Capstone - Predicting US Economic Growth](Capstone%20-%20Predicting%20US%20Economic%20Growth)

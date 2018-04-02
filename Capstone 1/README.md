@@ -1,29 +1,15 @@
-# Intro
-This is where you can see information about my first Data Science capstone project.
+# Capstone: Predicting US Economic Growth
 
+How much will a given local economy in the US grow or shrink this year? Since the great recession, awareness of economic trends has reached an all-time high. Corporations, governments, and families strive to make more economical investments. Given the complex range of factors contributing to a town or geography's economic growth and momentum, is it possible to predict the net growth or shrinkage of employer establishments in a county? Using historical US county-to-county population migration and historical business establishment data, this study aims to build a model for predicting the change in number of employer establishments in a given US county.
 
-Proposal
+![Map of Establishment Growth Rate 2005-2015](images/eda7.png)
 
- - [Read Me](Proposal.md)
+Checkpoints
 
-Data Wrangling
-
- - [Read Me](Data%20Wrangling.md)
-
- - [Python Notebook](Data%20Wrangling.ipynb)
-
-Exploratory Data Analysis
-
- - [Read Me](Exploratory%20Data%20Analysis.md)
-
- - [Python Notebook](Exploratory%20Data%20Analysis.ipynb)
-
-Inferential Statistics
-
- - [Read Me](Inferential%20Statistics.md)
-
- - [Python Notebook](Inferential%20Statistics.ipynb)
-
-Milestone Report
-
- - [Read Me](Milestone%20Report.md)
+ - [Project Proposal](Proposal.md)
+ - [Data Wrangling](Data%20Wrangling.md)
+ - [Exploratory Data Analysis](Exploratory%20Data%20Analysis.md)
+ - [Inferential Statistics](Inferential%20Statistics.md)
+ - [Milestone Report](Milestone%20Report.md)
+ - [Modeling](Modeling.md)
+ - [Report](Report.md)

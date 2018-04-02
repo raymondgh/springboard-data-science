@@ -1,6 +1,5 @@
-# Hello! I'm working on improving this readme. Check out my data science work!
-
-Github doesn't like when i rename root folders, so it's taking some time to fix this. for now, browse a little more manually than i'd like
+# Hello! Welcome to my Data Science Porfolio
+Below, find a list of exercises and projects that demonstrate my data science competency. Each of these projects required me to independently seek resources and understand new topics. A short description is available in the readme for each project, and a Jupyter notebook is supplied to show my solutions. Enjoy!
 
 
 [Capstone - Predicting US Economic Growth](Capstone%201)

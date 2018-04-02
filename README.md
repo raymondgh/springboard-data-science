@@ -3,13 +3,13 @@
 Github doesn't like when i rename root folders, so it's taking some time to fix this. for now, browse a little more manually than i'd like
 
 
-[Capstone - Predicting US Economic Growth](Capstone%20-%20Predicting%20US%20Economic%20Growth)
+[Capstone - Predicting US Economic Growth](Capstone%201)
 
-![Map of Establishment Growth Rate 2005-2015](Capstone%20-%20Predicting%20US%20Economic%20Growth/images/eda7.png)
+![Map of Establishment Growth Rate 2005-2015](Capstone%201/images/eda7.png)
 
-[Capstone - Recommending Hacker News Content](Capstone%20-%20Recommending%20Hacker%20News%20Content)
+[Capstone - Recommending Hacker News Content](Capstone%202)
 
-![Wordcloud](Capstone%20-%20Recommending%20Hacker%20News%20Content/images/wordcloud.png)
+![Wordcloud](Capstone%202/images/wordcloud.png)
 
 [Take Home Assessment - Ridesharing Experiment](Other%20Projects%20and%20Exercises/Take%20Home%20-%20Ultimate%20Technologies%20Inc)
 

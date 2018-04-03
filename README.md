@@ -1,9 +1,6 @@
 # Hello! Welcome to my Data Science Porfolio
 Below, find a list of exercises and projects that demonstrate my data science competency. Each of these projects required me to independently seek resources and understand new topics. A short description is available in the readme for each project, and a Jupyter notebook is supplied to show my solutions. Enjoy!
 
-![Plots Preview](preview.png)
-
-
  - [Capstone - Predicting US Economic Growth](Capstone%201)
  - [Capstone - Recommending Hacker News Content](Capstone%202)
  - [Take Home Assessment - Ridesharing Experiment](Other%20Projects%20and%20Exercises/Take%20Home%20-%20Ultimate%20Technologies%20Inc)
@@ -18,3 +15,5 @@ Below, find a list of exercises and projects that demonstrate my data science co
  - [Linear Regression - Boston Housing](Other%20Projects%20and%20Exercises/Linear%20Regression%20-%20Boston%20Housing)
  - [Data Wrangling - World Bank Projects](Other%20Projects%20and%20Exercises/Data%20Wrangling%20-%20World%20Bank%20Projects)
  - [Clustering - Customer Segmentation](Other%20Projects%20and%20Exercises/Clustering%20-%20Customer%20Segmentation)
+ 
+![Plots Preview](preview.png)
